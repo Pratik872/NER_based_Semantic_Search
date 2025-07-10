@@ -1,6 +1,7 @@
 from ner_modular.components.database_operations import DatabaseOperations
 from ner_modular.logging.logger import logging
 from ner_modular.components.ner_engine import NerEngine
+from ner_modular.components.retirever import Retriever
 
 
 from dotenv import load_dotenv
@@ -27,6 +28,11 @@ if __name__ == '__main__':
         logging.info(f"NER Engine Setup complete")
         ner.initialize_pipeline()
         logging.info(f"Pipeline initialized")
+
+        #Retriever Setup
+        retriever = Retriever()
+        logging.info(f"Retriever Setup complete")
+
 
         
     except Exception as e:

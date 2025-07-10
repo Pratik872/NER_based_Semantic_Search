@@ -24,10 +24,14 @@ class NerEngine:
 
     def initialize_pipeline(self):
 
-        nlp = pipeline('ner',
-                       model = self.model,
-                       tokenizer = self.tokenizer,
-                       aggregation_strategy= 'max',
-                       device = 'cpu')
+        try:
+            nlp = pipeline('ner',
+                        model = self.model,
+                        tokenizer = self.tokenizer,
+                        aggregation_strategy= 'max',
+                        device = 'cpu')
         
-        return nlp
+            return nlp
+        
+        except Exception as e:
+            logging.info(f"An unexpected error occurred: {e}")
