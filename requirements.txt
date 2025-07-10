@@ -1,0 +1,10 @@
+pandas
+pinecone
+ipykernel
+dotenv
+transformers
+torch
+torchvision
+torchaudio
+sentence_transformers
+datasets
