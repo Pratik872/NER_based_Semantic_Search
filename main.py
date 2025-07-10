@@ -42,7 +42,7 @@ if __name__ == '__main__':
         logging.info("Data Preparation phase complete")
 
         #Data Ingestion into Database
-        for i in range(0, 128, batch_size):
+        for i in range(0, len(df), batch_size):
             i_end = min(i+batch_size, len(df))
 
             #batch of data
