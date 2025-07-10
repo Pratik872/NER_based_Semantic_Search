@@ -14,3 +14,13 @@ class Retriever:
 
         except Exception as e:
             logging.info(f"An unexpected error occurred: {e}")
+
+
+    def get_batch_embeddings(self, batched_data):
+
+        try:
+            batch_embeddings = self.retriever.encode(batched_data).tolist()
+            return batch_embeddings
+        
+        except Exception as e:
+            logging.info(f"An unexpected error occurred: {e}")

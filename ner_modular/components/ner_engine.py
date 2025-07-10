@@ -35,3 +35,16 @@ class NerEngine:
         
         except Exception as e:
             logging.info(f"An unexpected error occurred: {e}")
+
+
+    def extract_NER(self, list_of_text, pipeline):
+
+        try:
+            entities = []
+            for doc in list_of_text:
+                entities.append([item['word'] for item in pipeline(doc)])
+
+            return entities
+
+        except Exception as e:
+            logging.info(f"An unexpected error occurred: {e}")
