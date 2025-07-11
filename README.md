@@ -3,6 +3,11 @@
 ## Overview
 - A RAG (Retrieval-Augmented Generation) system that combines Named Entity Recognition (NER) with semantic search for enhanced document retrieval from Medium articles.
 
+## Working
+![results](https://github.com/Pratik872/NER_based_Semantic_Search/blob/main/readme%20resources/results.png)
+
+![eachresult](https://github.com/Pratik872/NER_based_Semantic_Search/blob/main/readme%20resources/eachres.png)
+
 ## Business Applications
 ### Procurement Intelligence
 - <b>Supplier Discovery</b>: Enhanced search through supplier documents and capabilities.
@@ -11,7 +16,6 @@
 
 ## Project Structure
 ![structure](https://github.com/Pratik872/NER_based_Semantic_Search/blob/main/readme%20resources/structure.png)
-
 
 ## Architecture
 User Query → NER Extraction → Query Embedding → Vector Search + Entity Filter → Results
