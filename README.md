@@ -10,7 +10,7 @@
 - <b>Spend Analytics</b>: Categorize and analyze spending patterns using entity recognition.
 
 ## Project Structure
-![structure](https://github.com/Pratik872/networksecurity/blob/main/readme_resources/structure.png)
+![structure](https://github.com/Pratik872/NER_based_Semantic_Search/blob/main/readme%20resources/structure.png)
 
 
 ## Architecture
@@ -58,6 +58,6 @@ The app provides:
 
 
 ## Performance
-Latency: ~0.8 seconds average search time
-Dataset: 2,048 indexed articles
-Precision: Entity filtering improves relevance
+- Latency: ~0.8 seconds average search time
+- Dataset: 10k indexed articles
+- Precision: Entity filtering improves relevance
