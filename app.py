@@ -12,7 +12,7 @@ import os
 
 #Database connection
 env_variables = dict(os.environ)
-db = DatabaseOperations('pcsk_2WQh2j_MDSrSkCkuMYSg2YWPfwXUDQHp1gQnNwe8Q9uftQdQGfqPVMib7hadyLswoNe1be')
+db = DatabaseOperations(env_variables['PINECONE_API_KEY'])
 db.choose_index(index_name)
 
 #NER Engine Setup
