@@ -11,11 +11,12 @@ class NerEngine:
 
         try:
             #Tokenizer
-            self.tokenizer = AutoTokenizer.from_pretrained(model_id)
+            self.tokenizer = AutoTokenizer.from_pretrained(model_id, device='cpu')
             logging.info(f"Tokenizer loaded")
 
             #Model Initialization
             self.model = AutoModelForTokenClassification.from_pretrained(model_id)
+            self.model = self.model.to('cpu')
             logging.info(f"Model loaded")
 
         except Exception as e:

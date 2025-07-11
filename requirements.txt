@@ -8,3 +8,4 @@ torchvision
 torchaudio
 sentence_transformers
 datasets
+streamlit

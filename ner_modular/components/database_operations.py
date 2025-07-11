@@ -44,3 +44,10 @@ class DatabaseOperations:
 
         except Exception as e:
             logging.info(f"An unexpected error occurred: {e}")
+
+
+    def semantic_search(self, query_embed, top_k, criteria):
+        
+        xc = self.idx.query(vector=query_embed, top_k=top_k, include_metadata=True, filter={"ner": {"$in": criteria}})
+
+        return xc
